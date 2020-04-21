@@ -217,15 +217,15 @@ def login():
         jalan(' \033[1;91m────────────╚══╝────────────')
 	jalan(' \033[1;93mWarning: \033[1;95mDo Not Use Your Personal Account' )
 	jalan(' \033[1;93mWarning: \033[1;95mUse a New Account To Login' )
-	jalan(' \033[1;93mWarning: \033[1;95mTermux  All version Work✅' )                 
-		print "\033[1;95m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬ •◈•\033[1;91mBlackMafia\033[1;95m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
-		print('	   \033[1;91m▬\x1b[1;95m.........LOGIN WITH FACEBOOK........\x1b[1;91m▬' )
-		print('	' )
-		id = raw_input('\033[1;91m[+] \x1b[1;91mID/Email\x1b[1;95m: \x1b[1;95m')
-		pwd = raw_input('\033[1;91m[+] \x1b[1;91mPassword\x1b[1;95m: \x1b[1;95m')
-		tik()
-		try:
-			br.open('https://m.facebook.com')
+	jalan(' \033[1;93mWarning: \033[1;95mTermux  All version Work✅' )
+	print "\033[1;95m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬ •◈•\033[1;91mBlackMafia\033[1;95m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
+	print('	   \033[1;91m▬\x1b[1;95m.........LOGIN WITH FACEBOOK........\x1b[1;91m▬' )
+	print('	' )
+	id = raw_input('\033[1;91m[+] \x1b[1;91mID/Email\x1b[1;95m: \x1b[1;95m')
+	pwd = raw_input('\033[1;91m[+] \x1b[1;91mPassword\x1b[1;95m: \x1b[1;95m')
+	tik()
+	try:
+		br.open('https://m.facebook.com')
 		except mechanize.URLError:
 			print"\n\x1b[1;91mThere is no internet connection"
 			keluar()
