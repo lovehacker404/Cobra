@@ -226,7 +226,7 @@ def login():
 	tik()
 	try:
 		br.open('https://m.facebook.com')
-		except mechanize.URLError:
+	except mechanize.URLError:
 			print"\n\x1b[1;91mThere is no internet connection"
 			keluar()
 		br._factory.is_html = True
